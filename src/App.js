@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Button from "./Components/Button/Button";
+import CheckBoxComponent from "./Components/Checkbox/CheckBox";
+import { ConfigProvider, Divider } from "antd";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ConfigProvider
+      theme={{
+        components: {
+          Checkbox: {
+            controlInteractiveSize: 23,
+          },
+        },
+      }}
+    >
+      <div className="wrapper">
+        <div className="box">
+          <CheckBoxComponent />
+          <Divider />
+          <Button />
+        </div>
+      </div>
+    </ConfigProvider>
   );
 }
 

@@ -1,0 +1,18 @@
+.btn {
+  min-width: 23rem;
+  border-radius: 0;
+  color: #1f2128;
+  font-weight: 400;
+  font-style: Montserrat;
+  font-size: 14px;
+  line-height: 18.2px;
+  background-color: #ffce22;
+  cursor: pointer;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #ffd84d !important;
+  border: none;
+  color: #1f2128 !important;
+}
